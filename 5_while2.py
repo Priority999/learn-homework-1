@@ -14,14 +14,17 @@
     Программа: Программирую
     
 """
-
-questions_and_answers = {}
+questions_and_answers = {"Как дела?": "Хорошо!", 
+                         "Что делаешь?": "Программирую", 
+                         "Учишься или работаешь?": "Только учусь", 
+                         "На чем пишешь?": "Python", 
+                         "Нравится?": "Да, вполне!" }
 
 def ask_user(answers_dict):
-    """
-    Замените pass на ваш код
-    """
-    pass
-    
+  while True:
+    ask_inp = input('Введите вопрос: ')
+    if ask_inp in questions_and_answers:
+       print(questions_and_answers[ask_inp])
+
 if __name__ == "__main__":
     ask_user(questions_and_answers)
