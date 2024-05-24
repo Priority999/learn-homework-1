@@ -94,7 +94,7 @@ def talk_to_me(update, context):
 
 
 def main():
-    mybot = Updater("7147077264:AAGQl8_gRmJeBFWPgYd7kgUZJ8yhnrz6EE0",  use_context=True)
+    mybot = Updater("TOKEN",  use_context=True)
 
     dp = mybot.dispatcher
     dp.add_handler(CommandHandler("start", greet_user))
